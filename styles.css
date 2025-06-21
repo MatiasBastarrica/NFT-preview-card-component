@@ -29,6 +29,22 @@ img {
   display: block;
 }
 
+/* ### UTILITIES ### */
+
+.text-white {
+  color: var(--white);
+}
+
+.text-cyan {
+  color: var(--cyan-400);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}
+
 /* ### STYLING ### */
 
 body {
@@ -36,3 +52,7 @@ body {
   font-size: 1.125rem;
   color: var(--blue-500);
 }
+
+/* .nft-card__img {
+  align-self: center;
+} */
