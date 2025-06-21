@@ -3,6 +3,7 @@
 :root {
   --blue-500: hsl(215, 51%, 70%);
   --cyan-400: hsl(178, 100%, 50%);
+  --cyan-100: hsla(178, 100%, 50%, 0.35);
 
   --blue-950: hsl(217, 54%, 11%);
   --blue-900: hsl(216, 50%, 16%);
@@ -73,14 +74,38 @@ main {
   font-weight: var(--fw-600);
 }
 
+.nft-card__title:hover {
+  color: var(--cyan-400);
+  cursor: pointer;
+}
+
 .nft-card__description {
   line-height: 1.6;
 }
 
 .nft-card__img {
-  /* align-self: center; */
   border-radius: 0.6rem;
+  overflow: hidden;
   order: -1;
+  position: relative;
+  z-index: 1;
+}
+
+.nft-card__img:hover::before {
+  content: url(./images/icon-view.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cyan-100);
+
+  /* filter: opacity(0.3); */
+  z-index: 2;
+  cursor: pointer;
 }
 
 /* ## NFT VALUE AND DATE ## */
@@ -122,4 +147,9 @@ main {
 
 .nft-creator__name {
   font-weight: var(--fw-400);
+}
+
+.nft-creator__name:hover {
+  color: var(--cyan-400);
+  cursor: pointer;
 }
