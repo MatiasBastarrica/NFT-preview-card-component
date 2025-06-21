@@ -51,8 +51,24 @@ body {
   font-family: var(--ff-outfit);
   font-size: 1.125rem;
   color: var(--blue-500);
+  background-color: var(--blue-950);
 }
 
-/* .nft-card__img {
-  align-self: center;
-} */
+main {
+  padding: 5em 1.5em;
+}
+
+/* ### NFT CARD COMPONENT ### */
+
+.nft-card {
+  --gap: 1.5rem;
+  background-color: var(--blue-900);
+  padding: 1.5em;
+  border-radius: 1rem;
+}
+
+.nft-card__img {
+  /* align-self: center; */
+  border-radius: 0.6rem;
+  order: -1;
+}
