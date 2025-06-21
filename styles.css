@@ -58,6 +58,10 @@ body {
 
 main {
   padding: 5em 0.9em;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ### NFT CARD COMPONENT ### */
@@ -67,6 +71,7 @@ main {
   background-color: var(--blue-900);
   padding: 1.5em;
   border-radius: 1rem;
+  max-width: 380px;
 }
 
 .nft-card__title {
