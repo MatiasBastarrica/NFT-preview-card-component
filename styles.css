@@ -15,3 +15,11 @@
   --fw-400: 400;
   --fw-600: 600;
 }
+
+/* ### STYLING ### */
+
+body {
+  font-family: var(--ff-outfit);
+  font-size: 1.125rem;
+  color: var(--blue-500);
+}
